@@ -1,0 +1,336 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Engagement&display&family=Meddon&display=swap');
+
+/* Global Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4b0082;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Background Styling */
+body {
+    font-family: "Arial", sans-serif;
+    color: #5f6368;
+    background:
+        url('image/bg.png') center center / cover no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+/* Profile Header */
+.profile-header {
+    background-color: transparent;
+    color: var(--primary);
+    padding: 40px 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -70px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.profile-header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 15px;
+    font-family: "Meddon", cursive;
+}
+
+.profile-header p.subtitle {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.profile-header p.contact-info {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.contact-info i {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
+/* Employment History */
+.employment-history {
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.employment-header {
+    color: #fff;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Engagement", cursive;
+    position: relative;
+}
+
+.employment-header:before {
+    content: "";
+    background: var(--primary);
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    width: 280px;
+    transform: translateX(-50%) skewX(-30deg);
+    z-index: -1;
+}
+
+.job-card {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #4b0082;
+    border-right: 5px solid #4b0082;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.additional-class {
+    padding: 25px;
+}
+
+.job-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.job-card h3 i {
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+.job-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.website-links {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.responsibilities {
+    margin-top: 10px;
+}
+
+.responsibilities ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.responsibilities ul li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    position: relative;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.responsibilities ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #4b0082;
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #180161;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #6a5acd;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#backToTopBtn:hover {
+    background-color: var(--primary);
+}
+
+/* Education & Links */
+.section-container {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--primary);
+    border-right: 5px solid var(--primary);
+}
+
+/* Label */
+.label {
+    font-weight: bold;
+    color: #4b0082;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Content */
+.content p {
+    margin: 0;
+    color: #333;
+}
+
+.text-muted {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Links */
+.link-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #f0f0f5;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-item i {
+    margin-right: 8px;
+    color: #6a5acd;
+}
+
+.link-item:hover {
+    background-color: #e0e0f0;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.skills-list li::before {
+    content: "\25CB";
+    font-size: 1.2rem;
+    color: #4b0082;
+    margin-right: 10px;
+}
+
+/* Language List */
+.languages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.languages-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.languages-list li::before {
+    content: "\25CB";
+    /* Circle Unicode */
+    font-size: 1.2rem;
+    color: #4b0082;
+    margin-right: 10px;
+}
+
+.language-skill {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+/* Hobbies */
+.hobbies {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4b0082;
+}
