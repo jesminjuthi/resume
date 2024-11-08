@@ -21,6 +21,7 @@ const jobs = [
 		title: "Full Stack Web Developer at Personal Projects",
 		duration: "January 2019 — Present",
 		websites: [
+			"https://maktabatulabrar.com",
 			"https://rashedmamun.com",
 			"https://www.willisteoproperties.com",
 			"https://prptoronto.ca",
